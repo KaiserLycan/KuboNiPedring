@@ -1,0 +1,105 @@
+/* Variables */
+:root {
+    --color-1: #D3C6AD; 
+    --color-2: #695F4A;
+    --color-3: #C8C5A8;
+    --defaultSize: 20px;
+    --header1Size: calc(var(--defaultSize) * 3);
+    --header2Size: calc(var(--defaultSize) * 2);
+}
+
+/* Style-Rules for the whole document */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: var(--defaultSize);
+}
+
+/* Style Rules for the navigation bar */
+
+nav {
+    min-height: 116px;
+    max-height: fit-content;
+    background-color: var(--color-1);
+    padding: 1rem 5rem;
+}
+
+/* Changing the size of the logo */
+nav .logo{
+    width: 10%;
+}
+
+/* Make the url align with the image and button */
+nav ul {
+    display: inline-block;
+}
+
+/* Make the url in the un-ordered list vertically aligned instead of horizontal */
+nav ul li {
+    display: inline-block;
+    margin-left: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* removes the default design of the anchor tags */
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Changes the weight of the text if the user is currently in that page */
+nav ul li#current{
+    font-weight: bolder;
+}
+
+
+/* Hover Effect */
+nav ul li:hover a{
+    color: aliceblue;
+}
+
+/* Design for booking button */
+nav #booking-btn {
+    text-align: center;
+    padding: 1rem 2rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: var(--color-2);
+    border-radius: 15px;
+    margin-top: 2.2rem;
+    float:right;
+}
+
+/* Style Rules for Main */
+main {
+    width: 100%;
+    min-height: 50rem;
+    background-color: whitesmoke;
+
+}
+
+/* Style Rules for the footer */
+footer {
+    padding: 1em 5rem;
+    background-color: var(--color-1);
+}
+
+/* change the size of the logo to be smaller */
+footer .logo{
+    width: 5%;
+}
+
+/* chage remove the default style of the link*/
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+/* aligns the icon wiht the other elements */
+footer a i{
+    padding: 1rem;
+    margin: auto;
+}
