@@ -1,105 +1,325 @@
-/* Variables */
+/* Imports font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 :root {
-    --color-1: #D3C6AD; 
-    --color-2: #695F4A;
-    --color-3: #C8C5A8;
-    --defaultSize: 20px;
-    --header1Size: calc(var(--defaultSize) * 3);
-    --header2Size: calc(var(--defaultSize) * 2);
+    --color1: #E7D3AC;
+    --color2: #E4DE9C;
+    --color3: #695F4A;
+    --color4: #C8C5A8;
+    --color5: #F0E9D8;
+    --color6: #48443A;
+    --color7: #D3C6AD;
+
 }
 
-/* Style-Rules for the whole document */
+
+/* Genetic Tags */
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-size: var(--defaultSize);
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    color: var(--color6);
 }
 
-/* Style Rules for the navigation bar */
-
-nav {
-    min-height: 116px;
-    max-height: fit-content;
-    background-color: var(--color-1);
-    padding: 1rem 5rem;
-}
-
-/* Changing the size of the logo */
-nav .logo{
-    width: 10%;
-}
-
-/* Make the url align with the image and button */
-nav ul {
-    display: inline-block;
-}
-
-/* Make the url in the un-ordered list vertically aligned instead of horizontal */
-nav ul li {
-    display: inline-block;
-    margin-left: 1rem;
-    padding: 1rem;
-    text-align: center;
-}
-
-/* removes the default design of the anchor tags */
-nav ul li a {
+a{
     color: black;
     text-decoration: none;
 }
 
-/* Changes the weight of the text if the user is currently in that page */
-nav ul li#current{
+ul, ol {
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: bolder;
+    text-shadow: -2px 2px 3px var(--color3);
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
+h3 {
+    font-size: 2rem;
+    /* font-weight: bolder; */
+}
+
+
+/* hedear --> default style */
+
+header {
+    min-height: 20vh;
+    padding: 1rem 5rem;
+}
+
+/* Main --> default style */
+main {
+    padding: 5vh 10vw;
+    word-wrap: break-word;
+}
+
+
+body {
+    background-color: var(--color1);
+    background-image: url("../Assets/Images/bgimage.jpg");
+    background-size: cover;
+    background-blend-mode: soft-light;
+    overflow-x: hidden;
+}
+
+/* Navigation and Footer*/
+nav, footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    place-items: center;
+    padding: 0 5rem;
+    background-color: #E7D3AC;
+}
+
+nav img, footer img {
+    width: 10%;
+    min-width: 5rem;
+    max-width: 8rem;
+}
+
+nav ul li {
+    padding: 0.5rem 1.2rem;
+}
+
+nav ul li:hover {
+    background-color: var(--color3);
+}
+
+nav ul li:hover a {
+    color: white;
+}
+
+
+
+/* Navigation --> part 1 */
+
+.menu-1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+    flex-direction: row;
+}
+
+.menu-1 ul {
+    list-style: none;
+}
+
+.menu-1 > ul > li{
+    display: inline-block;
+    margin: 0.5rem 2rem;
+}
+
+.menu-1 .drop-content {
+    position: absolute;
+    padding: 1rem;
+    text-align: center;
+    display: none;
+    width: 10rem;
+    margin-left: -2.5rem;
+}
+
+.menu-1 .drop-content li {
+    background-color: var(--color3);
+    background-color: whitesmoke;
+    box-shadow: -5px 5px 5px var(--color6);
+    padding: 1rem 0.5rem;
+    margin-bottom: 0.2rem;
+}
+
+.menu-1 .drop-content li a {
+    color: black;
+}
+
+.menu a {
+    padding: 0.5rem 2rem;
+}
+
+.menu-1 #booking-btn {
+    background-color: var(--color3);
+    padding: 0.5rem 2rem;
+    color: white;
+    border-radius: 0.5rem;
+}
+
+.menu-1 .dropdown:hover .drop-content{
+    display: block;
+    
+}
+
+.current > a{
     font-weight: bolder;
 }
 
 
-/* Hover Effect */
-nav ul li:hover a{
-    color: aliceblue;
+.show-drop-content {
+    display: flex !important;
+    z-index: 20;
 }
 
-/* Design for booking button */
-nav #booking-btn {
+
+/* Navationg --> part 2 (only shows when the screen is at 1394px width */
+.menu-2 {
+    display: none;
+    position: absolute;
+    right: 5rem;
+    top: 2rem;
     text-align: center;
-    padding: 1rem 2rem;
+    overflow: hidden;
+    max-width: 20%;
+}
+
+.menu-2 button {
+    border: none;
+    background-color: var(--color3);
     color: white;
-    text-decoration: none;
-    font-weight: bold;
-    background-color: var(--color-2);
-    border-radius: 15px;
-    margin-top: 2.2rem;
-    float:right;
+    padding: 0.5rem 3rem;
+    border-radius: 0.5rem;
+    word-break: break-all;
 }
 
-/* Style Rules for Main */
-main {
-    width: 100%;
-    min-height: 50rem;
-    background-color: whitesmoke;
-
-}
-
-/* Style Rules for the footer */
-footer {
-    padding: 1em 5rem;
-    background-color: var(--color-1);
-}
-
-/* change the size of the logo to be smaller */
-footer .logo{
-    width: 5%;
-}
-
-/* chage remove the default style of the link*/
-footer a {
-    color: black;
-    text-decoration: none;
-}
-
-/* aligns the icon wiht the other elements */
-footer a i{
+.menu-2 .drop-content {
+    display: none;
+    margin-top: 100rem;
+    position: relative;
+    background-color: var(--color3);    
     padding: 1rem;
-    margin: auto;
+    margin-top: 1rem;
+    border-radius: 0.4rem;
+    word-break: break-all;
+    text-align: center;
+    place-items: center;
+    place-content: center;
+}
+
+.menu-2 .drop-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-2 .drop-content li {
+    text-align: center;
+    padding: 1rem 0 ;
+}
+
+.menu-2 .drop-content li:not(:last-child) {
+    border-bottom: 1px solid var(--color6);
+
+}
+
+.menu-2 .drop-content a {
+    color: white;
+}
+
+
+/* Nagation --> Part 3 (for phones) */
+.menu-3 {
+    display: none;
+}
+
+.menu-3 button {
+    background: none;
+    border: none;
+}
+
+.menu-3 button i {
+    font-size: 2rem;
+}
+
+.menu-3 .drop-content {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    place-content: center;
+    place-items: center;
+    position: absolute;
+    left: 0;
+    margin-top: 1rem;
+    width: 100vw;
+    background-color: var(--color3);
+}
+
+.menu-3 .drop-content ul {
+    list-style-type: none;
+    width: 100%;
+}
+
+.menu-3 .drop-content li {
+    padding: 1rem;
+}
+
+.menu-3 .drop-content li:not(:last-child) {
+    border-bottom: 1px solid var(--color6);
+}
+
+.menu-3 .drop-content a {
+    color: white;
+}
+
+/* Footer */
+
+footer #copyright{
+    display: flex;
+    place-items: center;
+}
+
+footer #socials{
+    display: flex;
+    flex-direction: row;
+}
+
+footer #socials i
+{
+    display: block;
+    font-size: 2rem;
+    margin: 1rem;
+
+}
+
+
+/* Media Controls */
+@media screen and (max-width: 1390px) {
+
+    .menu-1 ul li, .menu-1 #booking-btn{
+        display: none;
+    }
+
+    .menu-2 {
+        display: block;
+    }
+
+    footer #copyright {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width: 705px) {
+    .menu-2 {
+        display: none;
+    }
+
+    .menu-3 {
+        display: block;
+    }
 }

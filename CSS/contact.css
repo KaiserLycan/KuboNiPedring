@@ -1,0 +1,77 @@
+main {
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    place-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+    min-height: 80vh;
+}
+
+main .descriptions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+main .descriptions #contacts ul {
+    padding-left: 2rem;
+}
+
+main form {
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+input:not([type="submit"]), textarea {
+    padding: 1rem;
+    border: 1px solid var(--color6);
+    outline: none;
+    border-radius: 0.5rem;
+    background-color: var(--color1);
+}
+
+input[type="submit"] {
+    background-color: var(--color3);
+    color: white;
+    padding: 1rem;
+    border: none;
+}
+
+main form textarea {
+    resize: none;
+
+}
+
+main form .name{
+    display: flex;
+    gap: 1rem;
+}
+
+main form .name input {
+    width: 100%;
+}
+
+input::placeholder, textarea::placeholder {
+    color: var(--color6);
+}
+
+
+
+@media screen and (max-width: 1390px) {
+
+    main {
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width: 700px) {
+
+    .name {
+        flex-direction: column;
+    }
+    
+}

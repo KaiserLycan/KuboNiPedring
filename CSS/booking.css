@@ -1,0 +1,97 @@
+header{
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+    background-image: url("../Assets/Images/20240329_103036.jpg");
+    background-color: var(--color3);
+    background-blend-mode:multiply;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+}
+
+header a {
+    background-color: var(--color1);
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    word-wrap: break-word;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    place-items: center;
+    padding: 5rem;
+}
+
+.tables {
+    display: flex;
+    gap: 5rem;
+}
+
+.tables > div {
+    width: 100%;
+}
+
+.tables table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+  
+.tables table td, .tables table th {
+    border: 1px solid var(--color6);
+    padding: 8px;
+}
+  
+.tables table tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.tables table tr:nth-child(odd) {
+    background-color: var(--color5);
+}
+  
+.tables table tr:hover {
+    background-color: #ddd;
+}
+  
+.tables table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: var(--color3);
+    color: white;
+  }
+
+  .lists {
+    margin-top: 5rem;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    gap: 5rem;
+  }
+
+  .lists h2 {
+    text-transform: uppercase;
+  }
+
+  .lists ul {
+    padding-left: 2rem;
+  }
+
+  @media screen and (max-width: 625px) {
+    main .tables{
+        flex-direction: column;
+    }
+
+    main .lists {
+        flex-direction: column;
+    }
+  }

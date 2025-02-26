@@ -8,42 +8,192 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/CSS/_global.css">
-    <link rel="stylesheet" href="CSS/booking.css">
-    <title>Booking | Kubo ni Pedring</title>
+    <link rel="stylesheet" href="/CSS/booking.css">
+    <title>Home | Kubo ni Pedring</title>
+    <script src="main.js" defer></script>
 </head>
 <body>
     <!-- Navigation Bar -->
     <nav>
-        <img src="Assets/logo-transparent.png" alt="Kubo ni Pedring Logo" class="logo">
-        <ul>
-            <!-- #current changes the boldness of the button depending on where the user is in the website  -->
-            <li><a href="home.html">Home</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="activities.html">Activities</a></li>
-            <li><a href="travelGuide.html">Travel Guide</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="aboutUs.html">About Us</a></li>
-        </ul>
-        <a href="booking.html" id="booking-btn">Booking</a>
+        <div class="menu-1">
+            <img src="Assets/logo-transparent.png" alt="Kubo ni Pedring Logo" class="logo">
+            <ul>
+                <!-- #current changes the boldness of the button depending on where the user is in the website  -->
+                <li><a href="home.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="events.html">Events</a>
+                    <ul class="drop-content">
+                        <li><a href="event1.html">Wedding</a></li>
+                        <li><a href="event2.html">Bithday Party</a></li>
+                        <li><a href="event3.html">Other Party</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="travelGuide.html">Travel Guide</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+            </ul>
+            <a href="booking.html" id="booking-btn">Booking</a>             
+        </div>
+        
+        <!-- Dropdown Menu Only shows when size of the sreeen/browser is below the assigned value-->
+        <div class="menu-2" onmouseleave="closeDropDown()">
+            <button onclick="toggleDropDown(this)">Menu</button>
+            <div class="drop-content ">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="travelGuide.html">Travel Guide</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li  class="current"><a href="booking.html">Booking</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Dropdown menu for phones -->
+         <div class="menu-3" onmouseleave="closeDropDown()">
+            <button onclick="toggleDropDown(this)" data-menu-type="icon"><i class="bi bi-list"></i></button>
+            <div class="drop-content ">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="travelGuide.html">Travel Guide</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li  class="current"><a href="booking.html">Booking</a></li>
+                </ul>
+            </div>
+         </div>
     </nav>
 
-    <!-- Heroes/Banners/Jumbotron -->
-    <header>
+    <!-- Header/Jubotron/Hero -->
+     <header>
+        <img src="./Assets/half-logo.png" alt="half-logo">
+        <h1> <span style="color: var(--color1);">Kubo</span> ni <span style="color: var(--color2)">Pedring</span></h1>
+        <h3>Create Your Own Camp Story</h3>
+        <a href="contact.html">Request a quote</a>
+     </header>
 
-    </header>
+    <!-- Main content -->
+     <main>
+        <!-- Inser all content here -->
+        <section class="tables">
+            <div class="table1">
+                <h2>Rates</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th colspan="2">Rates</th>
+                        </tr>
+                        <tr>
+                            <th>Rates</th>
+                            <th>Price</th>
+                        </tr>
+                        <tr>
+                            <td>22-hour rate</td>
+                            <td>₱300 per pax</td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Schedule</th>
+                        </tr>
+                        <tr>
+                            <th>Check-In</th>
+                            <td>2:00 PM</td>
+                        </tr>
+                        <tr>
+                            <th>Check-Out</th>
+                            <td>12:00 PM</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
-    <!-- Main Content -->
-    <main>
+            <div class="table2">
+                <h2>Avialable for Rent</h2>
+                <table>
+                   <thead>
+                       <tr>
+                           <th>Available for Rent</th>
+                           <th>Price</th>
+                       </tr>
+                   </thead>
+       
+                   <tbody>
+                       <tr>
+                           <td>Videoke with Dining	</td>
+                           <td>₱500 per hour</td>
+                       </tr>
+                       <tr>
+                           <td>Kubo with Speaker	</td>
+                           <td>₱500 per hour</td>
+                       </tr>
+                       <tr>
+                           <td>Tent for Rent (4-5 persons)	</td>
+                           <td>₱1000 per night (with bed and pillow)</td>
+                       </tr>
+                       <tr>
+                           <td>Car (In case of rainy season)</td>
+                           <td>₱50 per head (back and forth)</td>
+                       </tr>
+                   </tbody>
+                </table>
+            </div>
+        </section> 
+        
+        <div class="lists">
+            <section>
+                <h2>amenities</h2>
+                <ul>
+                   <li>Comfort Room (Toilet and Bath)</li>
+                   <li>Grilling Station</li>
+                   <li>Fireplace</li>
+                   <li>Rooftop</li>
+                   <li>Grotto</li>
+                </ul>
+            </section>
+    
+            <section>
+                <h2>exclusions</h2>
+                <ul>
+                   <li>Entrance Fee</li>
+                   <li>Parking Space</li>
+                   <li>Solar Lights</li>
+                   <li>Kitchen Wares</li>
+                   <li>Portable Gas Stove</li>
+                </ul>
+            </section>
+    
+            <section>
+                <h2>inclusions</h2>
+                <ul>
+                   <li>Entrance Fee</li>
+                   <li>Parking Space</li>
+                   <li>Solar Lights</li>
+                   <li>Kitchen Wares</li>
+                   <li>Portable Gas Stove</li>
+                </ul>
+            </section>
+        </div>
+     </main>
 
-    </main>
     
     <!-- Footer -->
-    <footer class="">
-        <img src="Assets/logo-transparent.png" alt="Kubo in Pedring Logo" class="logo">
-        <span> &copy; 2025 - Kubo ni Pedring</span>
-        <a href="https://www.facebook.com/p/Kubo-ni-Pedring-100083255114828/"><i class="bi bi-facebook float-end h3"></i></a>
-        
+    <footer>
+        <div id="copyright">
+            <img src="Assets/logo-transparent.png" alt="Kubo in Pedring Logo" class="logo">
+            <span> &copy; 2025 - Kubo ni Pedring</span>
+        </div>
+
+        <div id="socials">
+            <a href="https://www.facebook.com/p/Kubo-ni-Pedring-100083255114828/" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.tiktok.com/@kubonipedringpedr" target="_blank"><i class="bi bi-tiktok"></i></a>
+        </div>
     </footer>
 </body>
 </html>

@@ -9,38 +9,100 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/CSS/_global.css">
     <link rel="stylesheet" href="/CSS/event.css">
-    <title>Event Name | Kubo ni Pedring</title>
+    <title>Events - Birthday Parties | Kubo ni Pedring</title>
+    <script src="main.js" defer></script>
 </head>
 <body>
     <!-- Navigation Bar -->
     <nav>
-        <img src="Assets/logo-transparent.png" alt="Kubo ni Pedring Logo" class="logo">
-        <ul>
-            <!-- #current changes the boldness of the button depending on where the user is in the website  -->
-            <li><a href="events.html">Events</a></li>
-            <li><a href="event1.html">Event Name</a></li>
-            <li><a href="event2.html">Event Name</a></li>
-            <li  id="current"><a href="event3.html">Event Name</a></li>
-        </ul>
-        <a href="booking.html" id="booking-btn">Booking</a>
+        <div class="menu-1">
+            <img src="Assets/logo-transparent.png" alt="Kubo ni Pedring Logo" class="logo">
+            <ul>
+                <!-- #current changes the boldness of the button depending on where the user is in the website  -->
+                <li><a href="home.html">Home</a></li>
+                <li class="dropdown current">
+                    <a href="events.html">Events</a>
+                    <ul class="drop-content">
+                        <li><a href="event1.html">Wedding</a></li>
+                        <li><a href="event2.html">Bithday Party</a></li>
+                        <li><a href="event3.html">Other Party</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="travelGuide.html">Travel Guide</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+            </ul>
+            <a href="booking.html" id="booking-btn">Booking</a>             
+        </div>
+        
+        <!-- Dropdown Menu Only shows when size of the sreeen/browser is below the assigned value-->
+        <div class="menu-2" onmouseleave="closeDropDown()">
+            <button onclick="toggleDropDown(this)">Menu</button>
+            <div class="drop-content ">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li class="current"><a href="events.html">Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="travelGuide.html">Travel Guide</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Dropdown menu for phones -->
+         <div class="menu-3" onmouseleave="closeDropDown()">
+            <button onclick="toggleDropDown(this)" data-menu-type="icon"><i class="bi bi-list"></i></button>
+            <div class="drop-content ">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li class="current"><a href="events.html">Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="travelGuide.html">Travel Guide</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                </ul>
+            </div>
+         </div>
     </nav>
 
-    <!-- Heroes/Banners/Jumbotron -->
-    <header>
+    <!-- Main content -->
+     <main>
+        <img src="./Assets/Images/otherparties.jpg" alt="Wedding photo">
+        <div class="description">
+            <div id="texts">
+                <h1>Other Events</h1>
+                <p>Kubo ni Pedring is not just a destination for vacations—it’s also the ideal place for a variety of events and gatherings. From corporate team buildings and reunions to anniversaries and special celebrations, our private farm resort provides ample space and facilities to cater to different occasions. Whether you’re organizing a company retreat to strengthen teamwork or hosting a meaningful event with friends and family, our venue ensures a peaceful and enjoyable experience surrounded by nature. Escape the hustle and bustle of the city and host your next event in a relaxing and scenic location.</p>
+            </div>
+            <div id="contacts">
+            <h4>Contacts</h4>
+                <ul>
+                    <li>0917-5774441 or 0928-3090832</li>
+                    <li>kubonipedring0531@gmail.com</li>
+                </ul>
+            </div>
+            <a href="contact.html">Inquire</a>
+        </div>
+     </main>
 
-    </header>
-
-    <!-- Main Content -->
-    <main>
-
-    </main>
     
     <!-- Footer -->
-    <footer class="">
-        <img src="Assets/logo-transparent.png" alt="Kubo in Pedring Logo" class="logo">
-        <span> &copy; 2025 - Kubo ni Pedring</span>
-        <a href="https://www.facebook.com/p/Kubo-ni-Pedring-100083255114828/"><i class="bi bi-facebook float-end h3"></i></a>
-        
+    <footer>
+        <div id="copyright">
+            <img src="Assets/logo-transparent.png" alt="Kubo in Pedring Logo" class="logo">
+            <span> &copy; 2025 - Kubo ni Pedring</span>
+        </div>
+
+        <div id="socials">
+            <a href="https://www.facebook.com/p/Kubo-ni-Pedring-100083255114828/" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.tiktok.com/@kubonipedringpedr" target="_blank"><i class="bi bi-tiktok"></i></a>
+        </div>
     </footer>
 </body>
 </html>

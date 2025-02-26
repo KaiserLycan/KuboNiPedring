@@ -1,0 +1,59 @@
+header > div{
+    background-color: var(--color3);
+    box-shadow: -5px 5px 5px var(--color6);
+    text-align: center;
+}
+
+header  p {
+    color: white;
+}
+
+
+.event-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.event-cards .card{
+    height: 50vh;
+    padding: 4rem 4rem;
+    display: flex;
+    flex-direction: column;
+    place-content: end;
+    place-items: center;
+    text-align: center;
+    background-color: var(--color3);
+    background-size: cover;
+    background-blend-mode:multiply;
+}
+
+.event-cards .card:hover {
+    background-blend-mode:soft-light;
+}
+
+.event-cards .card h3 {
+    text-transform: uppercase;
+    color: white;
+}
+
+.event-cards .card a {
+    max-width: 200vw;
+    background-color: var(--color3);
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    color: white;
+}
+
+@media screen and (max-width: 1143px) {
+    .event-cards {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .event-cards .card a {
+        font-size: 2vw;
+    }
+}
