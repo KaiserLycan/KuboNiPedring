@@ -92,6 +92,10 @@ nav img, footer img {
     max-width: 8rem;
 }
 
+nav {
+    border-bottom: 2px solid var(--color3);
+}
+
 nav ul li {
     padding: 0.5rem 1.2rem;
 }
@@ -104,6 +108,27 @@ nav ul li:hover a {
     color: white;
 }
 
+footer {
+    border-top: 2px solid var(--color3);
+}
+
+footer #copyright{
+    display: flex;
+    place-items: center;
+}
+
+footer #socials{
+    display: flex;
+    flex-direction: row;
+}
+
+footer #socials i
+{
+    display: block;
+    font-size: 2rem;
+    margin: 1rem;
+
+}
 
 
 /* Navigation --> part 1 */
@@ -272,25 +297,6 @@ nav ul li:hover a {
     color: white;
 }
 
-/* Footer */
-
-footer #copyright{
-    display: flex;
-    place-items: center;
-}
-
-footer #socials{
-    display: flex;
-    flex-direction: row;
-}
-
-footer #socials i
-{
-    display: block;
-    font-size: 2rem;
-    margin: 1rem;
-
-}
 
 
 /* Media Controls */
