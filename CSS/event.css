@@ -1,4 +1,4 @@
-main {
+section {
     display: flex;
     flex-direction: row;
 }
@@ -39,11 +39,19 @@ main .description a {
 }
 
 @media screen and (max-width: 1390px) {
+    
+
     main img {
         width: 100%;
     }
 
-    main {
+    section {
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 678px) {
+    main .description a {
+        max-width: 40%;
     }
 }

@@ -1,4 +1,4 @@
-main {
+main section {
     display: flex;
     flex-direction: row;
 }
@@ -44,7 +44,7 @@ main .description a {
         width: 100%;
     }
 
-    main {
+    section {
         flex-direction: column;
     }
 }

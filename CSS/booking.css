@@ -22,7 +22,7 @@ header a {
     word-wrap: break-word;
 }
 
-main{
+main > section{
     display: flex;
     flex-direction: column;
     place-content: center;
@@ -68,30 +68,30 @@ main{
     text-align: left;
     background-color: var(--color3);
     color: white;
-  }
+}
 
-  .lists {
+.lists {
     margin-top: 5rem;
     display: flex;
     place-content: center;
     place-items: center;
     gap: 5rem;
-  }
+}
 
-  .lists h2 {
-    text-transform: uppercase;
-  }
+.lists h2 {
+text-transform: uppercase;
+}
 
-  .lists ul {
-    padding-left: 2rem;
-  }
+.lists ul {
+padding-left: 2rem;
+}
 
-  @media screen and (max-width: 625px) {
-    main .tables{
-        flex-direction: column;
-    }
+@media screen and (max-width: 961px) {
+main .tables{
+    flex-direction: column;
+}
 
-    main .lists {
-        flex-direction: column;
-    }
-  }
+main .lists {
+    flex-direction: column;
+}
+}

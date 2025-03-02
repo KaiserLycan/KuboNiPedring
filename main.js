@@ -45,6 +45,47 @@ function toggleAnswer(element) {
     }
 }
 
+function nextImage() {
+    let images = document.querySelectorAll(".images img");
+    for(let i = 0; i < images.length; i++ ) {
+        if(!images[i].classList.contains("hidden")) {
+            images[i].classList.add("hidden");
+
+            if(i + 1 == images.length) {
+                images[0].classList.remove("hidden");
+            }
+            else {
+                images[i + 1].classList.remove("hidden");
+            }
+            break;
+        }
+    }
+}
+
+
+function previousImage() {
+    let images = document.querySelectorAll(".images img");
+    for(let i = images.length-1; i >= 0; i-- ) {
+        if(!images[i].classList.contains("hidden")) {
+            images[i].classList.add("reduced");
+            setTimeout(() => {
+                images[i].classList.add("hidden");
+
+                if( i-1 <= -1) {
+                    images[images.length-1].classList.remove("hidden");
+                    images[images.length-1].classList.remove('reduced');
+                }
+                else {
+                    images[i - 1].classList.remove("hidden");
+                    images[i-1].classList.remove('reduced');
+                }
+            }, 600);
+            
+            break;
+        }
+    }
+}
+
 // Array of images with their titles and descriptions
 const images = [
     {

@@ -4,6 +4,10 @@ header > div{
     text-align: center;
 }
 
+header {
+    word-wrap: break-word;
+}
+
 header  p {
     color: white;
 }
@@ -26,6 +30,7 @@ header  p {
     background-color: var(--color3);
     background-size: cover;
     background-blend-mode:multiply;
+    
 }
 
 .event-cards .card:hover {

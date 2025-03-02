@@ -1,4 +1,4 @@
-main {
+section {
     display: flex;
     flex-direction: row;
     place-content: center;
@@ -62,7 +62,7 @@ input::placeholder, textarea::placeholder {
 
 @media screen and (max-width: 1390px) {
 
-    main {
+    section{
         flex-direction: column;
     }
     

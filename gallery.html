@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/CSS/_global.css">
-    <link rel="stylesheet" href="/CSS/home.css">
     <link rel="stylesheet" href="/CSS/gallery.css">
 
     <title>Home | Kubo ni Pedring</title>
@@ -76,90 +75,39 @@
 
     <!-- Header/Jubotron/Hero -->
      <header>
- <div id="GalleryCarousel">
-        <div id="carouselExampleFade" class="carousel slide carousel-fade">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="Assets/Images/Huge space.jpg" class="d-block w-100" alt="Huge Space">
-              </div>
-              <div class="carousel-item">
-                <img src="Assets/Images/Full view.jpg" class="d-block w-100" alt="Full view">
-              </div>
-              <div class="carousel-item">
-                <img src="Assets/Images/20221031_093644.jpg" class="d-block w-100" alt="Kubo">
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+           <div class="images">
+            <img src="./Assets/Images/Full view.jpg" alt="Full View">
+            <img class="hidden" src="./Assets/Images/Huge space.jpg" alt="Huge Space">
+            <img class="hidden" src="/Assets/Images/20221031_093644.jpg" alt="Open field">
+           </div>
+           
+           <div id="buttons">
+             <button onclick="previousImage()"><i class="bi bi-caret-left-fill"></i></button>
+             <button onclick="nextImage()"><i class="bi bi-caret-right-fill"></i></button>
           </div>
-        </div>
-     </header>
+        </header>
 
     <!-- Main content -->
      <main>
-          <div class="GalleryMainContent">
-        <div class="row">
-            <div class="column">
-              <div class="content">
-                <img src="Assets/Images/20240811_173012.jpg" alt="Groto" >
-              </div>
-            </div>
-            <div class="column">
-              <div class="content">
-                <img src="Assets/Images/Billiards room.1.jpg" alt="Billiards Room" >
-              </div>
-            </div>
-            <div class="column">
-              <div class="content">
-                <img src="Assets/Images/Pool 1.jpg" alt="Pool" >
-              </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="column">
-              <div class="content">
-                <img src="Assets/Images/KUBos.jpg" alt="Billiards room" >
-              </div>
-            </div>
-            <div class="column">
-              <div class="content">
-                <img src="Assets/Images/Common Area - Kitchen and Videoke.jpg" alt="Kitchen and Videoke" >
-              </div>
-            </div>
-            <div class="column">
-              <div class="content">
-                <img src="Assets/Images/Common Area - videoke.jpg" alt="videoke" >
-              </div>
-            </div>
-        </div>
-    </div>
+        <section class="main-gallery">
+          <img src="Assets/Images/KUBos.jpg" alt="Billiards room" >
+          <img src="Assets/Images/20240811_173012.jpg" alt="Groto" >
+          <img src="Assets/Images/Billiards room.1.jpg" alt="Billiards Room" >
+          <img src="Assets/Images/Common Area - Kitchen and Videoke.jpg" alt="Kitchen and Videoke" >
+          <img src="Assets/Images/Pool 1.jpg" alt="Pool" >
+          <img src="Assets/Images/Common Area - videoke.jpg" alt="videoke" >
+        </section>
 
-    <br>
-    <br>
-    <br>
-    <div style="overflow-x:auto;">
-      <table>
-          <tr>
-            <td><h3>Take A Shot of the Best Camping Site!</h3>
-            <br><p>Kubo ni Pedring is the perfect destination to unwind, relax, and enjoy quality time with family, friends, or colleagues. The resort's beautiful landscape and lush greenery provide a delightful atmosphere for your stay. Create lasting memories with the activities that await you at the resort.</p>
-            <br><button type="button" class="btn btn-light "><a href="https://www.facebook.com/profile.php?id=100083255114828">Facebook</a></button>
-          </td>
-            <td><iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0264XfEzLP7a4zury42oLryh7hdgfzV9EyibGDufrUKgb3ZhJzowetycDKhVysXYpfl%26id%3D100083255114828&show_text=true&width=500" width="500" height="533" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-            </td>
-          </tr>
-  
-      </table>
-     </div>
-     <br>
-     <br>
-     <br>
-        <!-- Inser all content here -->
+        <section class="facebook">
+          <div class="description">
+            <h3>Take A Shot of the Best Camping Site!</h3>
+            <p>Kubo ni Pedring is the perfect destination to unwind, relax, and enjoy quality time with family, friends, or colleagues. The resort's beautiful landscape and lush greenery provide a delightful atmosphere for your stay. Create lasting memories with the activities that await you at the resort.</p>
+            <button type="button"><a href="https://www.facebook.com/profile.php?id=100083255114828">Visit our Facebook</a></button>
+          </div>
+          <br>
+          <br>
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0264XfEzLP7a4zury42oLryh7hdgfzV9EyibGDufrUKgb3ZhJzowetycDKhVysXYpfl%26id%3D100083255114828&show_text=true&width=500" width="500" height="533" style="overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+        </section>
      </main>
 
     
@@ -168,6 +116,9 @@
         <div id="copyright">
             <img src="Assets/logo-transparent.png" alt="Kubo in Pedring Logo" class="logo">
             <span> &copy; 2025 - Kubo ni Pedring</span>
+            <b>Adele, Irene;</b>
+            <b>Coloma, Raven;</b>
+            <b>Panti, Joseph Rey</b> 
         </div>
 
         <div id="socials">

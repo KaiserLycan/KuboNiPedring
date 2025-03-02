@@ -5,6 +5,7 @@
     --color1: #E7D3AC;
     --color2: #E4DE9C;
     --color3: #695F4A;
+    --color3-shadow: #695f4a96;
     --color4: #C8C5A8;
     --color5: #F0E9D8;
     --color6: #48443A;
@@ -63,8 +64,11 @@ header {
 
 /* Main --> default style */
 main {
-    padding: 5vh 10vw;
     word-wrap: break-word;
+}
+
+main > section {
+    padding: 5vh 10vw;
 }
 
 
@@ -98,6 +102,7 @@ nav {
 
 nav ul li {
     padding: 0.5rem 1.2rem;
+    border-radius: 0.5rem;
 }
 
 nav ul li:hover {
@@ -115,6 +120,7 @@ footer {
 footer #copyright{
     display: flex;
     place-items: center;
+    gap: 1rem;
 }
 
 footer #socials{
@@ -157,6 +163,8 @@ footer #socials i
     display: none;
     width: 10rem;
     margin-left: -2.5rem;
+    z-index: 1000;
+
 }
 
 .menu-1 .drop-content li {
@@ -300,7 +308,7 @@ footer #socials i
 
 
 /* Media Controls */
-@media screen and (max-width: 1390px) {
+@media screen and (max-width: 1624px) {
 
     .menu-1 ul li, .menu-1 #booking-btn{
         display: none;
@@ -321,6 +329,11 @@ footer #socials i
 }
 
 @media screen and (max-width: 705px) {
+
+    section {
+        padding: 5vh 5vw;
+    }
+
     .menu-2 {
         display: none;
     }

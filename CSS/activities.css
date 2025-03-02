@@ -22,8 +22,7 @@ header img {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: va
-    r(--color3);
+    background-color: var(--color3);
 }
 
 .gallery-text {
@@ -43,7 +42,6 @@ header img {
 
 .gallery-text h2, .gallery-text p {
     display: block !important;
-    opacity: 1 !important;
     color: white !important;
 }
 
@@ -61,7 +59,6 @@ header img {
     background-blend-mode: multiply;
     background-size: cover;
     background-position: center;
-    opacity: 0.6;
     z-index: 1;
 }
 
@@ -69,7 +66,7 @@ header img {
     width: 100vw;
     height: 90vh;
     object-fit: cover;
-    opacity: 0.6;
+    mix-blend-mode: multiply;
     transition: opacity 0.3s ease;
 }
 
