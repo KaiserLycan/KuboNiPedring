@@ -1,0 +1,62 @@
+/* For the Gallery Page*/
+
+#GalleryCarousel img{
+    width: 700px;
+    height: 700px;
+  }
+  
+  
+  .GalleryMainContent * {
+      box-sizing: border-box;
+  }
+  
+  .GalleryMainContent {
+      max-width: 1000px;
+      margin: auto;
+  }
+  
+  .row {
+      display: flex;
+      flex-wrap: wrap; 
+      margin: 8px -16px; 
+  }
+  
+  .column {
+      flex: 1 1 30%; 
+      padding: 10px;
+      display: flex; 
+      justify-content: center; 
+      align-items: center; 
+  }
+  
+  .content img {
+      width: 100%;
+      border-radius: 10%;
+  }
+  
+  @media screen and (max-width: 900px) {
+      .column {
+          flex: 1 1 50%; 
+      }
+  }
+  
+  @media screen and (max-width: 600px) {
+      .column {
+          flex: 1 1 100%; 
+      }
+  }
+
+  
+ table h3{
+    font-weight: bold;
+ }
+table td{
+    padding: 20px;
+}
+ 
+table{
+    background-color: #877A60;
+}
+table h3,p{
+   color: #F0E9D8;
+}
