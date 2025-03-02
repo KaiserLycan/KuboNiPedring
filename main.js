@@ -49,15 +49,19 @@ function nextImage() {
     let images = document.querySelectorAll(".images img");
     for(let i = 0; i < images.length; i++ ) {
         if(!images[i].classList.contains("hidden")) {
-            images[i].classList.add("hidden");
+            images[i].classList.add("reduced");
+            setTimeout(() => {
+                images[i].classList.add("hidden");
 
-            if(i + 1 == images.length) {
-                images[0].classList.remove("hidden");
-            }
-            else {
-                images[i + 1].classList.remove("hidden");
-            }
-            break;
+                if( i + 1 >= images.length) {
+                    images[0].classList.remove("hidden");
+                    images[0].classList.remove('reduced');
+                }
+                else {
+                    images[i + 1].classList.remove("hidden");
+                    images[i+1].classList.remove('reduced');
+                }
+            }, 600);
         }
     }
 }
