@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/Assets/logo.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/CSS/_global.css">
+    <link rel="stylesheet" href="/CSS/home.css">
+    <title>Home | Kubo ni Pedring</title>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="menu-1">
+            <img src="Assets/logo-transparent.png" alt="Kubo ni Pedring Logo" class="logo">
+            <ul>
+                <!-- #current changes the boldness of the button depending on where the user is in the website  -->
+                <li class="current"><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="events.html">Events</a>
+                    <ul class="drop-content">
+                        <li><a href="event1.html">Wedding</a></li>
+                        <li><a href="event2.html">Bithday Party</a></li>
+                        <li><a href="event3.html">Other Party</a></li>
+                    </ul>
+                </li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="activities.html">Activities</a></li>
+                <li><a href="travelGuide.html">Travel Guide</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+            </ul>
+            <a href="booking.html" id="booking-btn">Booking</a>             
+        </div>
+        
+        <!-- Dropdown Menu Only shows when size of the sreeen/browser is below the assigned value-->
+        <div class="menu-2" onmouseleave="closeDropDown()">
+            <button onclick="toggleDropDown(this)">Menu</button>
+            <div class="drop-content ">
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="travelGuide.html">Travel Guide</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Dropdown menu for phones -->
+         <div class="menu-3" onmouseleave="closeDropDown()">
+            <button onclick="toggleDropDown(this)" data-menu-type="icon"><i class="bi bi-list"></i></button>
+            <div class="drop-content ">
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="travelGuide.html">Travel Guide</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li><a href="booking.html">Booking</a></li>
+                </ul>
+            </div>
+         </div>
+    </nav>
+
+    <!-- Header/Jubotron/Hero -->
+    <header>
+        <img src="./Assets/half-logo.png" alt="half-logo">
+        <h1> <span style="color: var(--color1);">Kubo</span> ni <span style="color: var(--color2)">Pedring</span></h1>
+        <h3>Create Your Own Camp Story</h3>
+     </header>
+
+    <!-- Main content -->
+     <main>
+        <!-- Inser all content here -->
+        <section class="image-gallery">
+            <img src="Assets/Images/20221031_093644.jpg" alt="Image 1">
+            <img src="Assets/Images/Campsite.jpg" alt="Image 2">
+            <img src="Assets/Images/Huge space.jpg" alt="Image 3"   >
+        </section>
+        
+        <section class="campsite-section">
+            <div class="campsite-content">
+                <h2>THE BEST CAMPSITE!</h2>
+                <div class="stars">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                </div>
+                <p class="review">“The scenery is great, the pool has a safe depth, the rooms are spacious, and the staff is really friendly.” - Jhullana</p>
+                <p class="review">"Celebrating my friend's birthday at the resort was fun, we were able to play at the billiards and swim at the pool." - Jessica</p>
+                <p class="review">"The farm was a nice place to unwind and hang out with my friends." - Alta</p>
+            </div>
+        </section>
+
+        <section class="faq-container">
+            <h2 class="faq-title">
+                <i class="fa fa-question-circle"></i> Frequently Asked Questions
+            </h2>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <span>What facilities are available at the resort?</span>
+                    <i class="fa fa-chevron-right"></i>
+                </div>
+                <div class="faq-answer">
+                    No answer yet.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <span>Is there free Wi-Fi at the resort?</span>
+                    <i class="fa fa-chevron-right"></i>
+                </div>
+                <div class="faq-answer">
+                    No answer yet.
+                </div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <span>What activities are available at the resort?</span>
+                    <i class="fa fa-chevron-right"></i>
+                </div>
+                <div class="faq-answer">
+                    No answer yet.
+                </div>
+            </div>
+        
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(this)">
+                    <span>How do I get to the resort?</span>
+                    <i class="fa fa-chevron-right"></i>
+                </div>
+                <div class="faq-answer">
+                    No answer yet.
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div id="copyright">
+            <img src="Assets/logo-transparent.png" alt="Kubo in Pedring Logo" class="logo">
+            <span> &copy; 2025 - Kubo ni Pedring </span> 
+            <div style="display: flex; gap: 1rem;  ">
+                <b>Adele, Irene;</b>
+                <b>Coloma, Raven;</b>
+                <b>Panti, Joseph Rey</b> 
+            </div> 
+        </div>
+
+        <div id="socials">
+            <a href="https://www.facebook.com/p/Kubo-ni-Pedring-100083255114828/" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.tiktok.com/@kubonipedringpedr" target="_blank"><i class="bi bi-tiktok"></i></a>
+        </div>
+    </footer>
+</body>
+</html>
