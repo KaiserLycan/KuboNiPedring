@@ -95,7 +95,6 @@ main{
 }
 
 .faq-container {
-    padding: 5rem ;
     display: flex;
     place-content: center;
     flex-direction: column;
@@ -142,7 +141,7 @@ main{
     display: none;
     padding: 15px;
     background-color: #fff;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #ccc
 }
 
 .faq-question i {
