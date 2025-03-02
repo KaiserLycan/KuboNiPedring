@@ -1,0 +1,119 @@
+header {
+    width: 100vw; 
+    height: 90vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color3);
+    overflow: hidden;
+}
+
+header img {
+    width: 100vw;
+    height: 90vh;
+    object-fit: cover;
+    box-shadow: none;
+}
+
+.gallery-header {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: va
+    r(--color3);
+}
+
+.gallery-text {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white; 
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+    border-radius: 5px;
+    width: auto;
+    max-width: 80%;
+    opacity: 1; 
+}
+
+.gallery-text h2, .gallery-text p {
+    display: block !important;
+    opacity: 1 !important;
+    color: white !important;
+}
+
+.gallery-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: var(--color3);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.gallery-container img {
+    width: 100vw;
+    height: 90vh;
+    object-fit: cover;
+    opacity: 0.6;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-container i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 0;
+    transition: background 0.3s ease;
+}
+
+.gallery-container i:hover {
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 1;
+}
+
+#nextBtn { 
+    right: 10px; 
+}
+
+#prevBtn { 
+    left: 10px; 
+}
+
+.fb-posts {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 50px 0;
+}
+
+.fb-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.fb-posts iframe {
+    max-width: 100%;
+    border-radius: 10px;
+}
