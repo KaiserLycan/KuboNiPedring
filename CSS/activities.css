@@ -114,3 +114,11 @@ header img {
     max-width: 100%;
     border-radius: 10px;
 }
+
+
+@media screen and (max-width: 601px) {
+    .fb-posts {
+        flex-direction: column;
+    }
+    
+}
