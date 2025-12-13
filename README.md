@@ -1,0 +1,1 @@
+Kubo ni Perding, a commercial website meant to showcase the services and fun opportunities offered by Kubo ni Perding. This website is built with HTML, CSS, and JS. We also used Boostrap to easily create seamless and creative designs.
