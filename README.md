@@ -1,3 +1,4 @@
+![img.png](Assets/ReadMe_CoverImage.png)
 # Kubo ni Perding
 ### Campsite Resort
 Description:
