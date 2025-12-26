@@ -93,22 +93,22 @@ function previousImage() {
 // Array of images with their titles and descriptions
 const images = [
     {
-        src: "Assets/Images/Billiards room.1.jpg",
+        src: "assets/Images/Billiards room.1.jpg",
         title: "Billiards Room",
         description: "Enjoy a relaxing game of billiards in our fully equipped lounge."
     },
     {
-        src: "Assets/Images/Campsite.jpg",
+        src: "assets/Images/Campsite.jpg",
         title: "Campsite",
         description: "Experience the great outdoors with our scenic camping grounds."
     },
     {
-        src: "Assets/Images/Huge space.jpg",
+        src: "assets/Images/Huge space.jpg",
         title: "Spacious Venue",
         description: "A vast open space, perfect for gatherings and events."
     },
     {
-        src: "Assets/Images/Pool 1.jpg",
+        src: "assets/Images/Pool 1.jpg",
         title: "Swimming Pool",
         description: "Take a dip and cool off in our refreshing swimming pool."
     }

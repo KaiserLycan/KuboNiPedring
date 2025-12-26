@@ -74,7 +74,7 @@ main > section {
 
 body {
     background-color: var(--color1);
-    background-image: url("../Assets/Images/bgimage.jpg");
+    background-image: url("../assets/Images/bgimage.jpg");
     background-size: cover;
     background-blend-mode: soft-light;
     overflow-x: hidden;

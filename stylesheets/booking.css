@@ -3,7 +3,7 @@ header{
     flex-direction: column;
     place-content: center;
     place-items: center;
-    background-image: url("../Assets/Images/20240329_103036.jpg");
+    background-image: url("../assets/Images/20240329_103036.jpg");
     background-color: var(--color3);
     background-blend-mode:multiply;
     background-size: cover;

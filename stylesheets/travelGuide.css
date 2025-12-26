@@ -1,0 +1,26 @@
+/* For the travel guide page */
+section {
+    display: flex;
+    place-content: center;
+    place-items: center;
+    gap: 5rem;
+    min-height: 80vh;
+}
+
+iframe {
+    border: 3px solid var(--color3);
+    border-radius: 0.5rem;
+    height: 60vh;
+    width: 100%;
+}
+
+ol {
+    padding-left: 3rem;
+    line-height: 1.5rem;
+}
+
+@media screen and (max-width: 839px) {
+    main > section{
+        flex-direction: column;
+    }
+}
