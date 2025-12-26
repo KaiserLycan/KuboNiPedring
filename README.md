@@ -10,6 +10,7 @@ The website consists of multiple static pages (e.g. Home, About, Contact, Galler
 - HTML + CSS
 - BootStrap
 - Figma (Design)
+- Netlify (Hosting)
 
 # How to run the project
 To run the project:
@@ -25,3 +26,4 @@ To run the project:
 - I learned how to use Git and GitHub to version control my project.
 - I learned how to use VS Code to edit my project.
 - I learned how to use Node.js to run my project.
+- I learned how to host my project on Netlify.
