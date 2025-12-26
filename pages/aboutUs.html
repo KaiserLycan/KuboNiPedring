@@ -8,19 +8,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/CSS/_global.css">
-    <link rel="stylesheet" href="/CSS/gallery.css">
-
-    <title>Home | Kubo ni Pedring</title>
-    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="/CSS/aboutUs.css">
+    <title>About Us | Kubo ni Pedring</title>
+    <script src="../main.js" defer></script>
 </head>
 <body>
     <!-- Navigation Bar -->
     <nav>
         <div class="menu-1">
-            <img src="Assets/logo-transparent.png" alt="Kubo ni Pedring Logo" class="logo">
+            <img src="../Assets/logo-transparent.png" alt="Kubo ni Pedring Logo" class="logo">
             <ul>
                 <!-- #current changes the boldness of the button depending on where the user is in the website  -->
-                <li><a href="index.html">Home</a></li>
+                <li><a href="../index.html">Home</a></li>
                 <li class="dropdown">
                     <a href="events.html">Events</a>
                     <ul class="drop-content">
@@ -29,11 +28,11 @@
                         <li><a href="event3.html">Other Party</a></li>
                     </ul>
                 </li>
-                <li class="current"><a href="gallery.html">Gallery</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="activities.html">Activities</a></li>
                 <li><a href="travelGuide.html">Travel Guide</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="aboutUs.html">About Us</a></li>
+                <li  class="current"><a href="aboutUs.html">About Us</a></li>
             </ul>
             <a href="booking.html" id="booking-btn">Booking</a>             
         </div>
@@ -43,13 +42,13 @@
             <button onclick="toggleDropDown(this)">Menu</button>
             <div class="drop-content ">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="../index.html">Home</a></li>
                     <li><a href="events.html">Events</a></li>
-                    <li  class="current"><a href="gallery.html">Gallery</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="activities.html">Activities</a></li>
                     <li><a href="travelGuide.html">Travel Guide</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li class="current"><a href="aboutUs.html">About Us</a></li>
                     <li><a href="booking.html">Booking</a></li>
                 </ul>
             </div>
@@ -60,61 +59,43 @@
             <button onclick="toggleDropDown(this)" data-menu-type="icon"><i class="bi bi-list"></i></button>
             <div class="drop-content ">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="../index.html">Home</a></li>
                     <li><a href="events.html">Events</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
                     <li><a href="activities.html">Activities</a></li>
                     <li><a href="travelGuide.html">Travel Guide</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="aboutUs.html">About Us</a></li>
+                    <li class="current"><a href="aboutUs.html">About Us</a></li>
                     <li><a href="booking.html">Booking</a></li>
                 </ul>
             </div>
          </div>
     </nav>
 
-    <!-- Header/Jubotron/Hero -->
-     <header>
-           <div class="images">
-            <img src="./Assets/Images/Full view.jpg" alt="Full View">
-            <img class="hidden" src="./Assets/Images/Huge space.jpg" alt="Huge Space">
-            <img class="hidden" src="/Assets/Images/20221031_093644.jpg" alt="Open field">
-           </div>
-           
-           <div id="buttons">
-             <button onclick="previousImage()"><i class="bi bi-caret-left-fill"></i></button>
-             <button onclick="nextImage()"><i class="bi bi-caret-right-fill"></i></button>
-          </div>
-        </header>
-
     <!-- Main content -->
-     <main>
-        <section class="main-gallery">
-          <img src="Assets/Images/KUBos.jpg" alt="Billiards room" >
-          <img src="Assets/Images/20240811_173012.jpg" alt="Groto" >
-          <img src="Assets/Images/Billiards room.1.jpg" alt="Billiards Room" >
-          <img src="Assets/Images/Common Area - Kitchen and Videoke.jpg" alt="Kitchen and Videoke" >
-          <img src="Assets/Images/Pool 1.jpg" alt="Pool" >
-          <img src="Assets/Images/Common Area - videoke.jpg" alt="videoke" >
-        </section>
-
-        <section class="facebook">
-          <div class="description">
-            <h3>Take A Shot of the Best Camping Site!</h3>
-            <p>Kubo ni Pedring is the perfect destination to unwind, relax, and enjoy quality time with family, friends, or colleagues. The resort's beautiful landscape and lush greenery provide a delightful atmosphere for your stay. Create lasting memories with the activities that await you at the resort.</p>
-            <button type="button"><a href="https://www.facebook.com/profile.php?id=100083255114828">Visit our Facebook</a></button>
-          </div>
-          <br>
-          <br>
-            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid0264XfEzLP7a4zury42oLryh7hdgfzV9EyibGDufrUKgb3ZhJzowetycDKhVysXYpfl%26id%3D100083255114828&show_text=true&width=500" width="500" height="533" style="overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-        </section>
+    <main>
+        <!-- Inser all content here -->
+         <section>
+             <img src="../Assets/Images/otherparties.jpg" alt="Other parties photo">
+             <div class="description">
+                 <div id="texts">
+                     <h1>LEARN MORE ABOUT US:</h1>
+                     <p>Kubo ni Pedring, originally created as a camping site, was eventually developed as both a camping site, and with recent construction of more housing space, a private farm resort, was recently established two years ago, in 2023.</p>
+     
+                     <p>The more than one (1) hectare property it encompasses is surrounded by a scenic view of mountains and the vast green sceneries of Tanay, Rizal. It officially opened and became operational on June 01, 2024. The facility is intended to cater families or groups who would like to escape the city and enjoy the quiet and fresh air offered by nature.</p>
+                         
+                     <p>Kubo ni Pedring is located around the heart of the mountains of Barangay Tandang Kutyo, Tanay, Rizal and is just an hour and a half away from Manila.
+                         Apart from family and group vacations, the facility also offers enough space suitable for events such as weddings, birthdays, team buildings, etc.</p>
+                 </div>
+             </div>
+         </section>
      </main>
 
     
     <!-- Footer -->
     <footer>
         <div id="copyright">
-            <img src="Assets/logo-transparent.png" alt="Kubo in Pedring Logo" class="logo">
+            <img src="../Assets/logo-transparent.png" alt="Kubo in Pedring Logo" class="logo">
             <span> &copy; 2025 - Kubo ni Pedring</span>
         </div>
 
